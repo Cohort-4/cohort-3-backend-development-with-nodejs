@@ -1,4 +1,5 @@
 import express from "express";
+import usersRoute from "./route/user.js";
 
 import bodyParser from "body-parser";
 
@@ -8,9 +9,10 @@ app.use(bodyParser.json());
 
 const PORT = 9000;
 
+app.use("/users", usersRoute);
 app.get("/", (req, res) => {
   res.json({
-    message: "Hello Cohort three student and teacher",
+    message: "Hello Cohort three Homepage",
   });
 });
 
