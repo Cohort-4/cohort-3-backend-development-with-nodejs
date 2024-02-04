@@ -23,7 +23,7 @@ router.get("/:id", getUser);
 
 router.delete("/:id", deleteUser);
 
-// update user detaila
+// update user detail
 
 router.patch("/:id", updateUser);
 
